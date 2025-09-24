@@ -65,8 +65,8 @@ Numpy library
   # SUMMARY
 
   - In the Normalization Problem, a 5x5 matrix is generated, then normalized using the formula provided
-  - (x-mean)/std. Lastly, the result is saved in a file named x_normalized.npy
+   (x-mean)/std. Lastly, the result is saved in a file named x_normalized.npy
 
   - In the Divisible by 3 problem, the squares of numbers 1 to 100 are arranged into a 10x10 matrix.
-  - Elements are extracted and saved in a file named div_by_3.npy.
+    Elements are extracted and saved in a file named div_by_3.npy.
 
