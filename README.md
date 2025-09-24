@@ -26,13 +26,10 @@ Numpy library
 
   ### EXPLANATION:
   
-  - np.random.random((5,5)) 
-        - Creates a 5x5 matrix with random values between 0 and 1. 
-        - Stores this matrix in the variable x.
+  - np.random.random((5,5)) - Creates a 5x5 matrix with random values between 0 and 1. Stores this matrix in the variable x.
 
-  - x_normalized = (x-x.mean()) /np.std(x) - Applies the normalization formula: (x - mean)/std
-                                         - x.mean() finds the average value of all elements in x.
-                                         - np.std(x) calculates the standard deviation 
+  - x_normalized = (x-x.mean()) /np.std(x) - Applies the normalization formula: (x - mean)/std. x.mean() finds the average value of all elements in x.
+                                             np.std(x) calculates the standard deviation 
 
   - np.save("x_normalized.npy", x_normalized) - Saves in .npy format, which is NumPy.
 
@@ -53,8 +50,7 @@ Numpy library
 
    ### EXPLANATION:
      
-   - a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100
-                               - Squaring them (**2) gives values from 1^2 up to 100^2.
+   - a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100. Squaring them (**2) gives values from 1^2 up to 100^2.
 
    - a = a.reshape(10,10) - Converts into a 10x10 matrix
 
