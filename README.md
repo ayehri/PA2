@@ -14,7 +14,7 @@ Numpy library
 
 # CODE AND EXPLANATION
 
-1. Normalization Problem
+## Normalization Problem
   CODE:
   x = np.random.random((5,5)) 
   x_normalized = (x-x.mean()) /np.std(x)
@@ -36,7 +36,7 @@ Numpy library
   
   print ("\nNormalized x:\n", x_normalized) - Prints the normalized version (x_normalized).
 
-  2. Divisible by 3
+## Divisible by 3
      CODE:
      a = np.arange(1,101) ** 2
      a = a.reshape(10,10)
