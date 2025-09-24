@@ -52,18 +52,18 @@ Numpy library
 
    ### EXPLANATION:
      
-     - a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100
+   - a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100
                                - Squaring them (**2) gives values from 1^2 up to 100^2.
 
-     - a = a.reshape(10,10) - Converts into a 10x10 matrix
+   - a = a.reshape(10,10) - Converts into a 10x10 matrix
 
-     - div_by_3 = a [a%3==0] - a%3 == 0 determines which elements are divisible by 3.
+   - div_by_3 = a [a%3==0] - a%3 == 0 determines which elements are divisible by 3.
 
-     - np.save("div_by_3.npy", div_by_3) - Saves those numbers into a file called div_by_3.npy
+   - np.save("div_by_3.npy", div_by_3) - Saves those numbers into a file called div_by_3.npy
     
-     - print ("\n10x10 Array of Squares (a):\n",a) - Prints the full 10x10 matrix of squares.
+   - print ("\n10x10 Array of Squares (a):\n",a) - Prints the full 10x10 matrix of squares.
      
-     - print ("\nElements Divisible by 3:\n",div_by_3) - Prints the extracted numbers that are divisible by 3.
+   - print ("\nElements Divisible by 3:\n",div_by_3) - Prints the extracted numbers that are divisible by 3.
      
   # SUMMARY
 
