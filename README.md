@@ -18,11 +18,11 @@ Numpy library
  
      ### CODE:
   
-     - x = np.random.random((5,5)) 
-     - x_normalized = (x-x.mean()) /np.std(x)
-     - np.save("x_normalized.npy", x_normalized)
-     - print ("Original x (5x5):\n",x)
-     - print ("\nNormalized x:\n", x_normalized)
+     x = np.random.random((5,5)) 
+     x_normalized = (x-x.mean()) /np.std(x)
+     np.save("x_normalized.npy", x_normalized)
+     print ("Original x (5x5):\n",x)
+     print ("\nNormalized x:\n", x_normalized)
 
   ### EXPLANATION:
   
@@ -43,12 +43,12 @@ Numpy library
      
      ### CODE:
      
-     - a = np.arange(1,101) ** 2
-     - a = a.reshape(10,10)
-     - div_by_3 = a[a%3==0]
-     - np.save("div_by_3.npy", div_by_3)
-     - print ("\n10x10 Array of Squares (a):\n",a)
-     - print ("\nElements Divisible by 3:\n",div_by_3)
+     a = np.arange(1,101) ** 2
+     a = a.reshape(10,10)
+     div_by_3 = a[a%3==0]
+     np.save("div_by_3.npy", div_by_3)
+     print ("\n10x10 Array of Squares (a):\n",a)
+     print ("\nElements Divisible by 3:\n",div_by_3)
 
    ### EXPLANATION:
      
