@@ -15,49 +15,55 @@ Numpy library
 # CODE AND EXPLANATION
 
 ## Normalization Problem
-  CODE:
-  x = np.random.random((5,5)) 
-  x_normalized = (x-x.mean()) /np.std(x)
-  np.save("x_normalized.npy", x_normalized)
-  print ("Original x (5x5):\n",x)
-  print ("\nNormalized x:\n", x_normalized)
+ 
+  ### CODE:
+  
+  - x = np.random.random((5,5)) 
+  - x_normalized = (x-x.mean()) /np.std(x)
+  - np.save("x_normalized.npy", x_normalized)
+  - print ("Original x (5x5):\n",x)
+  - print ("\nNormalized x:\n", x_normalized)
 
-  EXPLANATION:
-  np.random.random((5,5)) - Creates a 5x5 matrix with random values between 0 and 1. 
+  ### EXPLANATION:
+  
+  - np.random.random((5,5)) - Creates a 5x5 matrix with random values between 0 and 1. 
                           - Stores this matrix in the variable x.
 
-  x_normalized = (x-x.mean()) /np.std(x) - Applies the normalization formula: (x - mean)/std
+  - x_normalized = (x-x.mean()) /np.std(x) - Applies the normalization formula: (x - mean)/std
                                          - x.mean() finds the average value of all elements in x.
                                          - np.std(x) calculates the standard deviation 
 
-  np.save("x_normalized.npy", x_normalized) - Saves in .npy format, which is NumPy.
+  - np.save("x_normalized.npy", x_normalized) - Saves in .npy format, which is NumPy.
 
-  print ("Original x (5x5):\n",x) - Prints the original matrix x.
+  - print ("Original x (5x5):\n",x) - Prints the original matrix x.
   
-  print ("\nNormalized x:\n", x_normalized) - Prints the normalized version (x_normalized).
+  - print ("\nNormalized x:\n", x_normalized) - Prints the normalized version (x_normalized).
 
 ## Divisible by 3
-     CODE:
-     a = np.arange(1,101) ** 2
-     a = a.reshape(10,10)
-     div_by_3 = a[a%3==0]
-     np.save("div_by_3.npy", div_by_3)
-     print ("\n10x10 Array of Squares (a):\n",a)
-     print ("\nElements Divisible by 3:\n",div_by_3)
+     
+     ### CODE:
+     
+     - a = np.arange(1,101) ** 2
+     - a = a.reshape(10,10)
+     - div_by_3 = a[a%3==0]
+     - np.save("div_by_3.npy", div_by_3)
+     - print ("\n10x10 Array of Squares (a):\n",a)
+     - print ("\nElements Divisible by 3:\n",div_by_3)
 
-     EXPLANATION:
-     a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100
+     ### EXPLANATION:
+     
+     - a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100
                                - Squaring them (**2) gives values from 1^2 up to 100^2.
 
-     a = a.reshape(10,10) - Converts into a 10x10 matrix
+     - a = a.reshape(10,10) - Converts into a 10x10 matrix
 
-     div_by_3 = a [a%3==0] - a%3 == 0 determines which elements are divisible by 3.
+     - div_by_3 = a [a%3==0] - a%3 == 0 determines which elements are divisible by 3.
 
-     np.save("div_by_3.npy", div_by_3) - Saves those numbers into a file called div_by_3.npy
+     - np.save("div_by_3.npy", div_by_3) - Saves those numbers into a file called div_by_3.npy
     
-     print ("\n10x10 Array of Squares (a):\n",a) - Prints the full 10x10 matrix of squares.
+     - print ("\n10x10 Array of Squares (a):\n",a) - Prints the full 10x10 matrix of squares.
      
-     print ("\nElements Divisible by 3:\n",div_by_3) - Prints the extracted numbers that are divisible by 3.
+     - print ("\nElements Divisible by 3:\n",div_by_3) - Prints the extracted numbers that are divisible by 3.
      
   # SUMMARY
 
