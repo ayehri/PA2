@@ -16,13 +16,13 @@ Numpy library
 
 ## Normalization Problem
  
-  ### CODE:
+     ### CODE:
   
-  - x = np.random.random((5,5)) 
-  - x_normalized = (x-x.mean()) /np.std(x)
-  - np.save("x_normalized.npy", x_normalized)
-  - print ("Original x (5x5):\n",x)
-  - print ("\nNormalized x:\n", x_normalized)
+     - x = np.random.random((5,5)) 
+     - x_normalized = (x-x.mean()) /np.std(x)
+     - np.save("x_normalized.npy", x_normalized)
+     - print ("Original x (5x5):\n",x)
+     - print ("\nNormalized x:\n", x_normalized)
 
   ### EXPLANATION:
   
@@ -50,7 +50,7 @@ Numpy library
      - print ("\n10x10 Array of Squares (a):\n",a)
      - print ("\nElements Divisible by 3:\n",div_by_3)
 
-     ### EXPLANATION:
+   ### EXPLANATION:
      
      - a = np.arange(1,101) ** 2 - np.arrange(1,101) generates integers from 1 to 100
                                - Squaring them (**2) gives values from 1^2 up to 100^2.
