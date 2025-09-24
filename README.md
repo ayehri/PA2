@@ -26,8 +26,9 @@ Numpy library
 
   ### EXPLANATION:
   
-  - np.random.random((5,5)) - Creates a 5x5 matrix with random values between 0 and 1. 
-                          - Stores this matrix in the variable x.
+  - np.random.random((5,5)) 
+        - Creates a 5x5 matrix with random values between 0 and 1. 
+        - Stores this matrix in the variable x.
 
   - x_normalized = (x-x.mean()) /np.std(x) - Applies the normalization formula: (x - mean)/std
                                          - x.mean() finds the average value of all elements in x.
